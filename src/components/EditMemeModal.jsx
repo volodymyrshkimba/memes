@@ -25,8 +25,8 @@ const EditMemeModal = ({
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalContent>
         <ModalHeader>Edit Meme</ModalHeader>
-        <ModalBody className="flex flex-col gap-4">
-          <Form className="w-full max-w-xs" onSubmit={handleSubmit}>
+        <ModalBody className="p-5">
+          <Form onSubmit={handleSubmit}>
             <Input
               isRequired
               label="Title"
@@ -63,12 +63,14 @@ const EditMemeModal = ({
               }
               validate={likesValidation}
             />
-            <Button variant="light" onClick={onClose}>
-              Cancel
-            </Button>
-            <Button type="submit" color="primary">
-              Save
-            </Button>
+            <div className="flex gap-4 w-full justify-end mt-5">
+              <Button variant="light" onClick={onClose}>
+                Cancel
+              </Button>
+              <Button type="submit" color="primary">
+                Save
+              </Button>
+            </div>
           </Form>
         </ModalBody>
       </ModalContent>

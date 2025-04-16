@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <Navbar>
-      <NavbarContent className="flex gap-4" justify="center">
+      <NavbarContent justify="center">
         <NavbarItem>
           <NavLink
             className={({ isActive }) => (isActive ? "text-primary " : "")}

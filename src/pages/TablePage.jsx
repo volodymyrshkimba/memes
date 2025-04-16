@@ -71,6 +71,7 @@ export default function TablePage() {
         <EditMemeModal
           isOpen={isOpen}
           onOpen={onOpen}
+          onClose={onClose}
           handleSubmit={handleSubmit}
           selectedMeme={selectedMeme}
           setSelectedMeme={setSelectedMeme}
