@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import TablePage from "./pages/TablePage";
 import ListPage from "./pages/ListPage";
@@ -12,6 +12,7 @@ export default function App() {
     <>
       <Header />
       <Routes>
+        <Route path="/" element={<Navigate to="/table" replace />} />
         <Route path="/table" element={<TablePage />} />
         <Route path="/list" element={<ListPage />} />
       </Routes>
