@@ -1,12 +1,41 @@
-# React + Vite
+# ![logo](./public/favicon.png) Meme Directory App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app built with [HeroUI](https://www.heroui.com) to view and edit popular memes. Deployed on [Railway](https://railway.app).
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [View the App](https://memes-production-b06e.up.railway.app/)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📊 Meme table using `HeroUI Table`
+- 📋 Meme list with `HeroUI Cards`
+- ✏️ Edit memes via `HeroUI Modal`
+- 🧪 Field validation:
+  - **Title**: 3–100 characters
+  - **Image**: Valid `.jpg` URL
+  - **Likes**: Integer between 0 and 99
+- 🔁 Meme data stored in `localStorage`
+- 📱 Responsive design for all screen sizes
+
+## 📄 Pages
+
+- `/table` – Meme table view
+- `/list` – Meme list with cards
+- Navigation via `HeroUI Navbar`
+- Redirect from `/` to `/table`
+
+## 🛠️ Tech Stack
+
+- React + Vite  
+- React Router DOM  
+- HeroUI  
+- Railway for deployment
+
+## ⚙️ Local Setup
+
+```bash
+git clone https://github.com/volodymyrshkimba/memes.git
+cd memes
+npm install
+npm run dev
